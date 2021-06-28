@@ -13,7 +13,7 @@
 	<div class="container">
 	
 	<h2>비회원제 답변형 게시판</h2>
-	<h3>전체페이지:${totalPage } / 현제페이지:${nowPage }</h3>
+	<h3>전체페이지:${totalPage } / 현재페이지:${nowPage }</h3>
 
 	<!-- 검색폼 -->
 	<form method="get">
@@ -59,7 +59,7 @@
 					</td>
 				</tr>
 			</c:when>
-			<c:otherwise>
+			<c:otherwise> 
 				<c:forEach items="${listRows }" var="row" 
 					varStatus="loop">
 					<!-- 리스트반복시작 -->
@@ -78,6 +78,15 @@
 				</c:forEach>
 			</c:otherwise>
 		</c:choose>
+	</table>
+	
+	<!-- 페이지 번호 -->
+	<table border="1" width="90%">
+		<tr>
+			<td align="center">
+				${pagingImg }
+			</td>
+		</tr>
 	</table>
 </div>
 	

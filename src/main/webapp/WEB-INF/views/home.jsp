@@ -4,7 +4,7 @@
 <%@ page session="false" %>
 <html>
 <head>
-	<title>Home</title>
+	<title>Home</title> 
 </head>
 <body>
 <h1>
@@ -17,6 +17,12 @@
       <li>
          <a href="./board/list.do" target="_blank">
             JDBCTemplate을 이용한 게시판 리스트
+         </a>
+      </li> 
+      <br /><br />
+      <li>
+         <a href="./board/write.do" target="_blank">
+            JDBCTemplate을 이용한 게시판 글쓰기
          </a>
       </li> 
    </ul>
